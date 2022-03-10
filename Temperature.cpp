@@ -1,5 +1,6 @@
+// Written by Seng Vengkim
 #include <iostream>  //adding iostream library
-using namespace std; // add identifier
+using namespace std; // add namespace identifier
 
 int main()
 {
