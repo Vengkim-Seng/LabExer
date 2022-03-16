@@ -1,6 +1,5 @@
 // Written by Seng Vengkim
 #include <iostream>  // adding isotream library
-#include <limits>    // adding Limits Library
 using namespace std; // using namespace identifier
 
 int main()
