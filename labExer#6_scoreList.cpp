@@ -11,8 +11,8 @@ int main()
     cout << "Enter Exam Score: ";  // output Enter Exam Score for user
     for (int i = 0; i < size; i++) // this block for code is store the user input in an array so that is can be access later
     {
-
-        if (cin >> score[i]) // this part is to check if the input is still a number and if not the input will stop accepting
+        cin >> score[i];
+        if (score[i] >= 0) // this part is to check if the input is still a number and if not the input will stop accepting
         {
             count++;
         }
@@ -22,8 +22,8 @@ int main()
         }
     }
 
-    int countOfA = 0, countOfB = 0, countOfC = 0, countOfD = 0, countOfF = 0; // declare counter variable for everyone letter grades
-    for (int j = 0; j <= count; j++)                                          // this block of code is for going throught each element in the array and check if it match any of the condition. if it does the counter will go up by one
+    int countOfA = 0, countOfB = 0, countOfC = 0, countOfD = 0, countOfF = 0, countofOut = 0; // declare counter variable for everyone letter grades
+    for (int j = 0; j <= count; j++)                                                          // this block of code is for going throught each element in the array and check if it match any of the condition. if it does the counter will go up by one
     {
         if (score[j] >= 90 && score[j] <= 100)
         {
@@ -47,7 +47,7 @@ int main()
         }
         else
         {
-            cout << "Number Out of Range : " << score[j] << endl;
+            countofOut++;
         }
     }
     cout << "Number of A's: " << countOfA << endl; // this part is the output to show the number of grade letter and the total score that have been input
